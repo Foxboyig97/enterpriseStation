@@ -1,0 +1,12 @@
+.new_list_item{
+    border: 0px ;
+    background-color: #fff;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+}
+.new_pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

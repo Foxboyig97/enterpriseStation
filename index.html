@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业站</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="modal modal-loding" id="loading" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog position-absolute top-50 start-50">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+        <header>
+            <div class="sticky-top">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">企业站</a>
+                        <ul class="navbar-nav d-flex flex-row">
+                            <li class="nav-item px-2">
+                                <a class="nav-link active" aria-current="page" href="./index.html">首页</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link">
+                                    <span id="navTonew">新闻</span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="../../EnterpriseStation/page/aboutMe.html">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <!-- banner start -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/banner_01_1080p.jpg" class="d-block w-100" alt="01">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner_02_1080p.jpg" class="d-block w-100" alt="02">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner_03_1080p.jpg" class="d-block w-100" alt="03">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- banner end -->
+        <div class="container pb-5">
+            <div class="d-flex justify-content-between title">
+                <span class="title_line"></span>
+                <span class="px-3">服务范围</span>
+                <span class="title_line"></span>
+            </div>
+            <div class="row">
+                <div class="col server_item">
+                    <div class="move_round_img move_round_img1"></div>
+                    <div class="desc">拯救地球</div>
+                </div>
+                <div class="col server_item">
+                    <div class="move_round_img move_round_img2"></div>
+                    <div class="desc">英雄合照</div>
+                </div>
+                <div class="col server_item">
+                    <div class="move_round_img move_round_img3"></div>
+                    <div class="desc">寻找原石</div>
+                </div>
+                <div class="col server_item">
+                    <div class="move_round_img move_round_img4"></div>
+                    <div class="desc">宇宙旅行</div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between title">
+                <span class="title_line"></span>
+                <span class="px-3">团队介绍</span>
+                <span class="title_line"></span>
+            </div>
+            <div class="team_info ">
+                <div class="team_item container-fluid ">
+                    <div class="mx-2">
+                        <div class="team_item_title">
+                            <span class="team_item_title_name"> 汪達 </span>
+                            <span class="team_item_title_lastname">馬克希莫夫</span>
+                        </div>
+                        <div class="team_item_desc">
+                            快銀的雙胞胎姊姊
+                            (比快銀早出生30秒，此為漫畫原作設定）
+                            原始設定是萬磁王的
+                            交兒，鋼鐵人的情婦，和美國隊長也有一段地下情，於2014年底的漫畫連載中修改設
+                            定，緋紅女巫跟快銀是終極進化 （High Evolutionary）基因赏驗產生的基因改造人，
+                            並非變種人，並且有一位之前未曾登場的雙胞胎姊妹Luminous。
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/article_1_360p.jpg" />
+                    </div>
+                </div>
+                <div class="team_line m-3"></div>
+            </div>
+            <div class="team_info ">
+                <div class="team_item container-fluid ">
+                    <div>
+                        <img src="./assets/article_2_360p.jpg" />
+                    </div>
+                    <div class="mx-2">
+                        <div class="team_item_title">
+                            <span class="team_item_title_name"> 黑寡妇 </span>
+                            <span class="team_item_title_lastname">娜塔和亞</span>
+                        </div>
+                        <div class="team_item_desc">
+                            她的事业招募了一名对她痴迷的制服射手！而他就是随后成为超级英雄的“鹰眼”。俄
+                            罗斯政府为黑寡妇提供了她的第一
+                            -套制服和高科技武器
+                            但她与美国政府产生嫌隙却
+                            是在超级英雄团队系列漫面 《复仇者》 第29期 （1966年7月）出版后。
+                        </div>
+                    </div>
+
+                </div>
+                <div class="team_line m-3"></div>
+            </div>
+            <div class="team_info ">
+                <div class="team_item container-fluid ">
+                    <div class="mx-2">
+                        <div class="team_item_title">
+                            <span class="team_item_title_name"> 獵鷹 </span>
+                            <span class="team_item_title_lastname">山姆威尔森 </span>
+                        </div>
+                        <div class="team_item_desc">
+                            在个充斥着街头暴力与帮派斗争的黑人住宅区长大。
+                            他的牧师父亲为了阻止一场争
+                            斗而意外丧生，
+                            山姆强忍心中的悲痛与愤怒
+                            尽可能保持理性地生活着，直到两年后
+                            个走私贩子杀死丁他的母亲，多年积怨的复仇情绪将山姆的性情彻底改变，
+                            一个备
+                            受尊敬的有志青年变成了为暴徒工作的诈欺犯
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/article_3_360p.jpg" />
+                    </div>
+                </div>
+                <div class="team_line m-3"></div>
+            </div>
+            <div class="team_info ">
+                <div class="team_item container-fluid ">
+                    <div>
+                        <img src="./assets/article_4_360p.jpg" />
+                    </div>
+                    <div class="mx-2">
+                        <div class="team_item_title">
+                            <span class="team_item_title_name"> 汪達 </span>
+                            <span class="team_item_title_lastname">馬克希莫夫</span>
+                        </div>
+                        <div class="team_item_desc">
+                            快銀的雙胞胎姊姊
+                            (比快銀早出生30秒，此為漫畫原作設定）
+                            原始設定是萬磁王的
+                            交兒，鋼鐵人的情婦，和美國隊長也有一段地下情，於2014年底的漫畫連載中修改設
+                            定，緋紅女巫跟快銀是終極進化 （High Evolutionary）基因赏驗產生的基因改造人，
+                            並非變種人，並且有一位之前未曾登場的雙胞胎姊妹Luminous。
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-between title">
+                <span class="title_line"></span>
+                <span class="px-3">新闻动态</span>
+                <span class="title_line"></span>
+            </div>
+            <div class="news_list">
+                <button class="news-item nav-link">
+                    <div class="item_news_img">
+                        <img data-src="" alt="" class="lazyload">
+                    </div>
+                    <div class="item_news_intro mt-2">
+                        这是一段简短的介绍的话
+                    </div>
+                </button>
+                <button class="news-item nav-link">
+                    <div class="item_news_img">
+                        <img data-src="" alt="" class="lazyload">
+                    </div>
+                    <div class="item_news_intro mt-2">
+                        这是一段简短的介绍的话
+                    </div>
+                </button>
+                <button class="news-item nav-link">
+                    <div class="item_news_img">
+                        <img data-src="" alt="" class="lazyload">
+                    </div>
+                    <div class="item_news_intro mt-2">
+                        这是一段简短的介绍的话
+                    </div>
+                </button>
+                <button class="news-item nav-link">
+                    <div class="item_news_img">
+                        <img data-src="" alt="" class="lazyload">
+                    </div>
+                    <div class="item_news_intro mt-2">
+                        这是一段简短的介绍的话
+                    </div>
+                </button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer p-3 container-fluid">
+                <div class="d-flex">
+                    <span class="px-2 footer_item">地址：福州市仓山区</span>
+                    <span class="px-2 footer_item">邮箱：Robin@hotmail.com</span>
+                    <span class="px-2 footer_item">电话：000-000-000</span>
+                </div>
+                <div class="footer_line m-2 "></div>
+                <div class="footer_qrcode">
+                    <img width="20" height="20" src="./assets/qr_code.jpg" />
+                    <span>2021 Company,Inc</span>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="module" src="./server/http.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="module">
+    var nesArray = []
+    function init() {
+        var myCarousel = document.querySelector('#carouselExampleIndicators')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: false,
+            wrap: false,
+            ride: false
+        })
+    }
+    async function queryNews() {
+        $('#loading').modal('show');
+        let newsItems = document.querySelectorAll('.news_list .news-item');
+        try {
+            let res = await window.requestServer.getNewsList()
+            if (res.code == 200) {
+                setTimeout(() => {
+                    $('#loading').modal('hide');
+                }, 500);
+                nesArray = res.data
+                newsItems.forEach((item, index) => {
+
+                    let Img = item.querySelector('.item_news_img img')
+                    let intro = item.querySelector('.item_news_intro')
+                    let info = item.querySelector('.item_news_info')
+                    Img.setAttribute('src', nesArray[index].img)
+                    intro.innerHTML = nesArray[index].title
+                });
+            }
+
+        } catch (error) {
+
+        }
+    }
+
+    window.onload = function () {
+        init()
+        queryNews()
+    }
+
+    let newsBtns = document.querySelectorAll('.news-item')
+    newsBtns.forEach((item, index) => {
+        item.addEventListener('click', function () {
+            window.location.href = `/EnterpriseStation/page/newsinfo.html?code=${nesArray[index].code}`;
+        })
+    })
+    document.getElementById('navTonew').addEventListener('click', () => {
+        window.location.href = '/EnterpriseStation/page/news.html?page=1&page_size=10'
+    })
+</script>
+
+</html>
