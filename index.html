@@ -266,6 +266,13 @@
                 </button>`
                 });
                 newListDom.innerHTML = newsItemDom
+
+                let newsBtns = document.querySelectorAll('.news-item')
+                newsBtns.forEach((item, index) => {
+                    item.addEventListener('click', function () {
+                        window.location.href = `/page/newsinfo.html?code=${nesArray[index].code}`;
+                    })
+                })
             }
 
         } catch (error) {
@@ -279,12 +286,7 @@
         lazyload()
     }
 
-    let newsBtns = document.querySelectorAll('.news-item')
-    newsBtns.forEach((item, index) => {
-        item.addEventListener('click', function () {
-            window.location.href = `/page/newsinfo.html?code=${nesArray[index].code}`;
-        })
-    })
+
     document.getElementById('navTonew').addEventListener('click', () => {
         window.location.href = '/page/news.html?page=1&page_size=10'
     })
