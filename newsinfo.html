@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新闻</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body>
     <div class="modal modal-loding" id="loading" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog position-absolute top-50 start-50">
             <div class="spinner-border text-light" role="status">
-                <span class="visually-hidden">Loading...</span>
+                <span class="visually-hidden">Loading..</span>
             </div>
         </div>
     </div>
@@ -27,8 +27,7 @@
                         <a class="navbar-brand">企业站</a>
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-item px-2">
-                                <a class="nav-link " aria-current="page"
-                                    href="../index.html">首页</a>
+                                <a class="nav-link " aria-current="page" href="/index.html">首页</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link active" aria-current="page">
@@ -36,7 +35,7 @@
                                 </a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="../page/aboutMe.html">关于我们</a>
+                                <a class="nav-link" href="/page/aboutMe.html">关于我们</a>
                             </li>
                         </ul>
                     </div>
@@ -56,7 +55,7 @@
                 </div>
                 <div class="footer_line m-2 "></div>
                 <div class="footer_qrcode">
-                    <img width="20" height="20" src="../assets/qr_code.jpg" />
+                    <img width="20" height="20" src="./assets/qr_code.jpg" />
                     <span>2021 Company,Inc</span>
                 </div>
             </div>
@@ -65,7 +64,7 @@
     </div>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="module" src="../server/http.js"></script>
+<script type="module" src="./server/http.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -96,7 +95,7 @@
         queryNewsInfo()
     }
     document.getElementById('navTonew').addEventListener('click', () => {
-        window.location.href = '/page/news.html?page=1&page_size=10'
+        window.location.href = '/enterpriseStation/news.html?page=1&page_size=10'
     })
 </script>
 

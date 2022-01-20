@@ -27,7 +27,7 @@
                         <a class="navbar-brand">企业站</a>
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-item px-2">
-                                <a class="nav-link active" aria-current="page" href="./index.html">首页</a>
+                                <a class="nav-link active" aria-current="page">首页</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link">
@@ -35,7 +35,7 @@
                                 </a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="./page/aboutMe.html">关于我们</a>
+                                <a class="nav-link" href="/enterpriseStation/aboutMe.html">关于我们</a>
                             </li>
                         </ul>
                     </div>
@@ -246,6 +246,7 @@
     }
     async function queryNews() {
         $('#loading').modal('show');
+        let codeArray = []
         try {
             let res = await window.requestServer.getNewsList()
             if (res.code == 200) {
@@ -264,13 +265,13 @@
                        ${item.title}
                     </div>
                 </button>`
+                    codeArray.push(item.code)
                 });
                 newListDom.innerHTML = newsItemDom
-
                 let newsBtns = document.querySelectorAll('.news-item')
                 newsBtns.forEach((item, index) => {
                     item.addEventListener('click', function () {
-                        window.location.href = `/page/newsinfo.html?code=${nesArray[index].code}`;
+                        window.location.href = `/enterpriseStation/newsinfo.html?code=${codeArray[index]}`;
                     })
                 })
             }
@@ -288,7 +289,7 @@
 
 
     document.getElementById('navTonew').addEventListener('click', () => {
-        window.location.href = '/page/news.html?page=1&page_size=10'
+        window.location.href = '/enterpriseStation/news.html?page=1&page_size=10'
     })
 </script>
 
