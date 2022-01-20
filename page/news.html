@@ -28,14 +28,13 @@
                         <a class="navbar-brand">企业站</a>
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-item px-2">
-                                <a class="nav-link " aria-current="page"
-                                    href="../../EnterpriseStation/index.html">首页</a>
+                                <a class="nav-link " aria-current="page" href="../index.html">首页</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link active">新闻</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="../../EnterpriseStation/page/aboutMe.html">关于我们</a>
+                                <a class="nav-link" href="../page/aboutMe.html">关于我们</a>
                             </li>
                         </ul>
                     </div>
@@ -116,7 +115,7 @@
                 let newsBtns = document.querySelectorAll('.new_list_item')
                 newsBtns.forEach((item, index) => {
                     item.addEventListener('click', function () {
-                        window.location.href = `/EnterpriseStation/page/newsinfo.html?code=${nesArray[index].code}`;
+                        window.location.href = `/page/newsinfo.html?code=${nesArray[index].code}`;
                     })
                 })
 
@@ -155,7 +154,7 @@
                             } else {
                                 num = index
                             }
-                        let newherf = `/EnterpriseStation/page/news.html?page=${num}&page_size=10`
+                        let newherf = `/page/news.html?page=${num}&page_size=10`
 
                         window.location.href = newherf
                         queryNewsList()
