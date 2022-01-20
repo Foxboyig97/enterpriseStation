@@ -246,6 +246,7 @@
     }
     async function queryNews() {
         $('#loading').modal('show');
+        let codeArray = []
         try {
             let res = await window.requestServer.getNewsList()
             if (res.code == 200) {
@@ -264,13 +265,13 @@
                        ${item.title}
                     </div>
                 </button>`
+                    codeArray.push(item.code)
                 });
                 newListDom.innerHTML = newsItemDom
-
                 let newsBtns = document.querySelectorAll('.news-item')
                 newsBtns.forEach((item, index) => {
                     item.addEventListener('click', function () {
-                        window.location.href = `/enterpriseStation/page/newsinfo.html?code=${item.code}`;
+                        window.location.href = `/newsinfo.html?code=${codeArray[index]}`;
                     })
                 })
             }
