@@ -27,7 +27,7 @@
                         <a class="navbar-brand">企业站</a>
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-item px-2">
-                                <a class="nav-link active" aria-current="page" href="/index.html">首页</a>
+                                <a class="nav-link active" aria-current="page">首页</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link">
@@ -35,7 +35,7 @@
                                 </a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="/page/aboutMe.html">关于我们</a>
+                                <a class="nav-link" href="/enterpriseStation/aboutMe.html">关于我们</a>
                             </li>
                         </ul>
                     </div>
@@ -271,7 +271,7 @@
                 let newsBtns = document.querySelectorAll('.news-item')
                 newsBtns.forEach((item, index) => {
                     item.addEventListener('click', function () {
-                        window.location.href = `/newsinfo.html?code=${codeArray[index]}`;
+                        window.location.href = `/enterpriseStation/newsinfo.html?code=${codeArray[index]}`;
                     })
                 })
             }
